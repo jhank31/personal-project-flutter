@@ -18,25 +18,12 @@ class Dashboard extends StatelessWidget {
     return ChangeNotifierProvider(
       create: (BuildContext context) => DashboardController(),
       child: Scaffold(
-          appBar: AppBar(
-            leading: Builder(
-              builder: (BuildContext context) {
-                return IconButton(
-                    onPressed: () => Scaffold.of(context).openDrawer(),
-                    icon: const Icon(Icons.menu_open_rounded));
-              },
-            ),
-            elevation: 0,
-            iconTheme: const IconThemeData(color: Colors.black, size: 35),
-            backgroundColor: Colors.transparent,
-          ),
-          drawer: const DrawerMenuZoom(),
           body: Stack(
-            children: const [
-              _Paginas(),
-              BottomNavBar(),
-            ],
-          )),
+        children: const [
+          _Paginas(),
+          BottomNavBar(),
+        ],
+      )),
     );
   }
 }
