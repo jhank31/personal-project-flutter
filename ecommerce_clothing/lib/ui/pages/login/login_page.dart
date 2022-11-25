@@ -1,13 +1,12 @@
 import 'package:flutter/material.dart';
 
+import 'package:ecommerce_clothing/ui/widgets/widgets.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:get/get.dart';
+import 'widgets/title_login.dart';
 
-import '../../widgets/widgets.dart';
-import 'widgets/title_register.dart';
-
-class RegisterPage extends StatelessWidget {
-  const RegisterPage({Key? key}) : super(key: key);
+class LoginPage extends StatelessWidget {
+  const LoginPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -24,20 +23,9 @@ class RegisterPage extends StatelessWidget {
             physics: const BouncingScrollPhysics(),
             child: Column(
               children: [
-                TitleRegsiter(size: size),
+                TitleLogin(size: size),
                 const SizedBox(
                   height: 50,
-                ),
-                const InputLoginRegister(
-                    hintText: 'Nombre',
-                    isObscure: false,
-                    keyboardType: TextInputType.emailAddress,
-                    icon: FaIcon(
-                      FontAwesomeIcons.user,
-                      color: Colors.white,
-                    )),
-                const SizedBox(
-                  height: 25,
                 ),
                 const InputLoginRegister(
                     hintText: 'Email',
@@ -65,8 +53,9 @@ class RegisterPage extends StatelessWidget {
                 LoginButton(
                   colors: const [Color(0xff3E3D3B), Color(0xffD67112)],
                   height: 50,
-                  text: 'Registrarse',
+                  text: 'Inicia Sesión',
                   width: size.width * 0.8,
+                  onTap: () => Get.toNamed('/dashboard'),
                 ),
                 const SizedBox(
                   height: 25,
@@ -77,15 +66,15 @@ class RegisterPage extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         const Text(
-                          '¿Ya tienes cuenta?',
+                          '¿No tienes cuenta?',
                           style: TextStyle(color: Colors.white, fontSize: 15),
                         ),
                         TextButton(
                             onPressed: () {
-                              Get.toNamed('/login');
+                              Get.toNamed('/register');
                             },
                             child: const Text(
-                              'Inicia sesión ahora',
+                              'Registrate ahora',
                               style: TextStyle(
                                   color: Color(0xffF6A80B),
                                   fontSize: 16,
@@ -93,6 +82,24 @@ class RegisterPage extends StatelessWidget {
                             ))
                       ],
                     ),
+                    GestureDetector(
+                      onTap: () {},
+                      child: const Text(
+                        '¿Olvidate tu costraseña?',
+                        style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 16,
+                            fontWeight: FontWeight.bold),
+                      ),
+                    ),
+                    Container(
+                      color: Colors.white,
+                      height: 1,
+                      width: 150,
+                    ),
+                    const SizedBox(
+                      height: 40,
+                    )
                   ],
                 ),
               ],

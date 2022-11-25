@@ -20,7 +20,7 @@ class TitleLogin extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: const [
           Text(
-            'INGRESA EN',
+            'INGRESA A',
             style: TextStyle(
                 color: Colors.white,
                 fontFamily: 'Cormorant',

@@ -1,5 +1,8 @@
-import 'package:ecommerce_clothing/ui/pages/login/login.dart';
-import 'package:ecommerce_clothing/ui/pages/register/register.dart';
+import 'package:ecommerce_clothing/ui/pages/dashboard/dashboard_page.dart';
+import 'package:ecommerce_clothing/ui/pages/help/help_page.dart';
+import 'package:ecommerce_clothing/ui/pages/login/login_page.dart';
+import 'package:ecommerce_clothing/ui/pages/register/register_page.dart';
+import 'package:ecommerce_clothing/ui/pages/settings/setting_page.dart';
 import 'package:get/get.dart';
 
 List<GetPage<dynamic>> routes = [
@@ -11,4 +14,14 @@ List<GetPage<dynamic>> routes = [
       name: '/register',
       page: () => const RegisterPage(),
       transition: Transition.rightToLeft),
+  GetPage(
+      name: '/dashboard',
+      page: () => const Dashboard(),
+      transition: Transition.fade),
+  GetPage(
+      name: '/settings',
+      page: () => const SettingsPage(),
+      transition: Transition.fade),
+  GetPage(
+      name: '/help', page: () => const HelpPage(), transition: Transition.fade),
 ];

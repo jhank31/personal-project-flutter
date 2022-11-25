@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
       title: 'E-commerce Clothing',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(fontFamily: 'RobotoCondensed'),
-      initialRoute: '/login',
+      initialRoute: 'login',
       getPages: routes,
     );
   }

@@ -5,12 +5,14 @@ class LoginButton extends StatelessWidget {
   final double height;
   final List<Color> colors;
   final String text;
+  final VoidCallback? onTap;
   const LoginButton({
     Key? key,
     required this.width,
     required this.height,
     required this.colors,
     required this.text,
+    required this.onTap,
   }) : super(key: key);
 
   @override
@@ -19,7 +21,7 @@ class LoginButton extends StatelessWidget {
       height: height,
       width: width,
       child: MaterialButton(
-        onPressed: () {},
+        onPressed: onTap,
         shape:
             RoundedRectangleBorder(borderRadius: BorderRadius.circular(80.0)),
         padding: const EdgeInsets.all(0.0),
