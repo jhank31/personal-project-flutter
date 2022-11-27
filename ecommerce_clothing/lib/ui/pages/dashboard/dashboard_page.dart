@@ -19,10 +19,7 @@ class Dashboard extends StatelessWidget {
       create: (BuildContext context) => DashboardController(),
       child: Scaffold(
           body: Stack(
-        children: const [
-          _Paginas(),
-          BottomNavBar(),
-        ],
+        children: const [_Paginas(), BottomNavBar(), ],
       )),
     );
   }

@@ -20,17 +20,17 @@ class BottomNavBar extends StatelessWidget {
         padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 10),
         decoration: const BoxDecoration(
           borderRadius: BorderRadius.all(Radius.circular(50)),
-          color: Colors.black,
+          color: Color(0xff3A4757),
         ),
         child: GNav(
             selectedIndex: navegacionModel.paginaActual,
             onTabChange: (index) => navegacionModel.paginaActual = index,
             color: Colors.white,
-            activeColor: Colors.white,
-            tabBackgroundColor: Colors.grey.shade800,
+            activeColor: const Color(0xffE0E5EB),
+            tabBackgroundColor: const  Color(0xff5D6B7D),
             padding: const EdgeInsets.all(16),
             gap: 20,
-            backgroundColor: Colors.black,
+            backgroundColor: const Color(0xff3A4757),
             iconSize: 30,
             tabs: const [
               GButton(

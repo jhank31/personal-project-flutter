@@ -1,3 +1,4 @@
+import 'package:ecommerce_clothing/ui/const/const.dart';
 import 'package:ecommerce_clothing/ui/pages/profile/widgets/credit_card.dart';
 import 'package:ecommerce_clothing/ui/widgets/button_credit_card.dart';
 import 'package:flutter/material.dart';
@@ -10,7 +11,7 @@ class CreditCardPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-          backgroundColor: Colors.grey.shade200,
+          backgroundColor: CosntColors.backgroundBLue,
           body: Container(
             margin: const EdgeInsets.symmetric(horizontal: 30, vertical: 20),
             width: double.infinity,

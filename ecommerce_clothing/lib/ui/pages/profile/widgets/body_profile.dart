@@ -1,3 +1,4 @@
+import 'package:ecommerce_clothing/ui/const/const.dart';
 import 'package:ecommerce_clothing/ui/pages/profile/method_payment_profile.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -24,7 +25,7 @@ class BodyProfile extends StatelessWidget {
           bottom: 100,
         ),
         decoration: BoxDecoration(
-            color: Colors.grey.shade200,
+            color: CosntColors.backgroundBLue,
             borderRadius: const BorderRadius.only(
                 topLeft: Radius.circular(35), topRight: Radius.circular(35))),
         child: Column(
@@ -40,7 +41,7 @@ class BodyProfile extends StatelessWidget {
                     BoxShadow(
                         offset: Offset(4, 4),
                         blurRadius: 15,
-                        color: Colors.grey,
+                        color: Colors.black54,
                         spreadRadius: 3)
                   ]),
               child: const CircleAvatar(
@@ -51,17 +52,17 @@ class BodyProfile extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.only(top: 15),
               child: Column(
-                children: const [
-                  Text(
+                children: [
+                  const Text(
                     'Andrea Herrera',
-                    style: TextStyle(fontSize: 18),
+                    style: TextStyle(fontSize: 18, color: Colors.white),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 5,
                   ),
                   Text(
                     'andrea@gmail.com',
-                    style: TextStyle(fontSize: 18, color: Colors.grey),
+                    style: TextStyle(fontSize: 18, color: Colors.grey.shade500),
                   ),
                 ],
               ),
@@ -82,12 +83,11 @@ class BodyProfile extends StatelessWidget {
                       Get.to(const CreditCardPage());
                     },
                   ),
-                  Padding(
-                    padding: const EdgeInsets.only(left: 30),
+                  const Padding(
+                    padding: EdgeInsets.only(left: 30),
                     child: Text(
                       'Tarjetas Registradas',
-                      style:
-                          TextStyle(color: Colors.grey.shade700, fontSize: 18),
+                      style: TextStyle(color: Colors.white, fontSize: 18),
                     ),
                   )
                 ],
@@ -122,45 +122,31 @@ class _PropietiesProfile extends StatelessWidget {
             children: const [
               ListTile(
                 title: Text('Pais: Colombia',
-                    style: TextStyle(
-                      fontSize: 16,
-                    )),
+                    style: TextStyle(fontSize: 16, color: Colors.white)),
               ),
               ListTile(
                 title: Text('Departamento: Quindio',
-                    style: TextStyle(
-                      fontSize: 16,
-                    )),
+                    style: TextStyle(fontSize: 16, color: Colors.white)),
               ),
               ListTile(
                 title: Text('Edad: 22',
-                    style: TextStyle(
-                      fontSize: 16,
-                    )),
+                    style: TextStyle(fontSize: 16, color: Colors.white)),
               ),
               ListTile(
                 title: Text('Ciudad: Armenia',
-                    style: TextStyle(
-                      fontSize: 16,
-                    )),
+                    style: TextStyle(fontSize: 16, color: Colors.white)),
               ),
               ListTile(
                 title: Text('Numero: 319-860-4856',
-                    style: TextStyle(
-                      fontSize: 16,
-                    )),
+                    style: TextStyle(fontSize: 16, color: Colors.white)),
               ),
               ListTile(
                 title: Text('Nivel: Height Trinity',
-                    style: TextStyle(
-                      fontSize: 16,
-                    )),
+                    style: TextStyle(fontSize: 16, color: Colors.white)),
               ),
               ListTile(
                 title: Text('Puntos: 120.000',
-                    style: TextStyle(
-                      fontSize: 16,
-                    )),
+                    style: TextStyle(fontSize: 16, color: Colors.white)),
               ),
             ],
           ),

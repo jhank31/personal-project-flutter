@@ -1,3 +1,7 @@
+export 'package:ecommerce_clothing/ui/widgets/general_button.dart';
+
+export 'package:ecommerce_clothing/ui/widgets/my_appbar.dart';
+
 export 'package:ecommerce_clothing/ui/widgets/button_credit_card.dart';
 
 export 'package:ecommerce_clothing/ui/widgets/bottom_nav_bar.dart';

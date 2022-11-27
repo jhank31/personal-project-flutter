@@ -1,3 +1,4 @@
+import 'package:ecommerce_clothing/ui/const/const.dart';
 import 'package:flutter/material.dart';
 
 class ButtonCreditCard extends StatelessWidget {
@@ -15,29 +16,21 @@ class ButtonCreditCard extends StatelessWidget {
       width: 60,
       height: 60,
       decoration: BoxDecoration(
-          color: Colors.grey.shade300,
-          shape: BoxShape.circle,
-          boxShadow: [
-            BoxShadow(
-                color: Colors.grey.shade500,
-                offset: const Offset(4, 4),
-                blurRadius: 10,
-                spreadRadius: 1),
-            const BoxShadow(
-                color: Colors.white,
-                offset: Offset(-4, -4),
-                blurRadius: 10,
-                spreadRadius: 1),
-          ],
-          gradient: LinearGradient(
-            begin: Alignment.topLeft,
-            end: Alignment.bottomRight,
-            colors: [
-              Colors.grey.shade200,
-              Colors.grey.shade300,
-              Colors.grey.shade400,
-            ],
-          )),
+        color: CosntColors.backgroundBLue,
+        shape: BoxShape.circle,
+        boxShadow: const [
+          BoxShadow(
+              color: Color.fromARGB(255, 64, 73, 85),
+              offset: Offset(4, 4),
+              blurRadius: 10,
+              spreadRadius: 1),
+          BoxShadow(
+              color: Color.fromARGB(255, 108, 125, 146),
+              offset: Offset(-4, -4),
+              blurRadius: 10,
+              spreadRadius: 1),
+        ],
+      ),
       child: IconButton(onPressed: onTap, icon: icon),
     );
   }

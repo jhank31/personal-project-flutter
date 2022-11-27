@@ -1,3 +1,4 @@
+import 'package:ecommerce_clothing/ui/const/const.dart';
 import 'package:flutter/material.dart';
 
 import 'widgets/body_profile.dart';
@@ -11,7 +12,7 @@ class ProfilePage extends StatelessWidget {
     final size = MediaQuery.of(context).size;
     return SafeArea(
       child: Scaffold(
-        backgroundColor: Colors.black,
+        backgroundColor: CosntColors.blueBottomNavBar,
         body: Column(
           children: [TopPage(size: size), BodyProfile(size: size)],
         ),
